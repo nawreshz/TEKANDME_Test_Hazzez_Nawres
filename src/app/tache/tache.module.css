@@ -11,7 +11,7 @@
 }
 
 @media (max-width:1200px) {
-  .HelloText{
+  .HelloText {
     font-size: 24px;
     text-align: start;
   }
@@ -279,8 +279,31 @@
   .CalendarAndDate {
     display: none !important;
   }
-  .FiltresParentBody{
+
+  .FiltresParentBody {
     flex-direction: column;
     gap: 16px;
+  }
+}
+
+.DayName {
+  font-size: 30px;
+  color: rgba(248, 119, 119, 1);
+  display: block;
+}
+
+.DayNameMobile {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .DayName {
+    display: none !important;
+  }
+
+  .DayNameMobile {
+    font-size: 30px;
+    color: rgba(248, 119, 119, 1);
+    display: block !important;
   }
 }

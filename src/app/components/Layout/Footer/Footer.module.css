@@ -3,24 +3,51 @@
   padding: 11px;
   align-items: center;
 }
+
 .tekandmecopyright {
   font-size: 20px;
   font-weight: 400;
   line-height: 14px;
 }
-.TodoListName{
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 30px;
+
+.TodoListName {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
 }
-.LogoTextContainer{
-    gap: 8px;
-    align-items: center;
+
+.LogoTextContainer {
+  gap: 8px;
+  align-items: center;
 }
-.SocialMediaContainer{
-    gap: 10px;
-    align-items: center;
+
+.SocialMediaContainer {
+  gap: 10px;
+  align-items: center;
 }
+
 /* .FontFamily2 {
 
 } */
+@media (min-width: 1200px) {
+  .LogoTextContainerMobile {
+    gap: 8px;
+    align-items: center;
+    display: none !important
+  }
+}
+
+@media (max-width:1200px) {
+  .footer {
+    flex-direction: column-reverse !important;
+    gap: 24px !important
+  }
+  .SocialMediaContainer{
+    justify-content: space-between
+    ;
+    width: 100%;
+  }
+ .LogoTextContainer{
+  display: none !important;
+ }
+}

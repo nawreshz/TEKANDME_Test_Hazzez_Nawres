@@ -3,7 +3,7 @@ import axios from "axios";
 import styles from "./Carte.module.css";
 import Image from "next/image";
 
-// Create axios instance with default config
+
 const api = axios.create({
   baseURL: "http://localhost:1337/api",
   headers: {
@@ -11,7 +11,7 @@ const api = axios.create({
   },
 });
 
-// Add request interceptor to add auth token
+
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem("jwt");
   if (token) {
@@ -38,7 +38,7 @@ const Carte = (props) => {
   const [editedDescription, setEditedDescription] = useState(description);
   const [editedStartDate, setEditedStartDate] = useState(startDate);
   const [editedEndDate, setEditedEndDate] = useState(endDate);
-  console.log({ IDCARTE: id });
+ 
  const handleEdit = () => {
     if (!completed) {
       setIsEditing(true);

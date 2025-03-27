@@ -272,12 +272,13 @@ export default function Tache() {
             {" "}
             Start planning today
           </span>
+          
         </h1>
 
         <div className={`d-flex ${styles.TaskBody} gap-4	`}>
           <div className={`d-flex flex-column ${styles.CalendarAndDate}`}>
             <span className={`${styles.DayName} FontFamilyMoments`}>{dayName}</span>
-            <span className={`${styles.FormattedDate} FontFamilyAbhayaLibre`}>
+            <span className={`${styles.FormattedDate} FontFamilyAbhayaLibre text-center`}>
               {formattedDate}
             </span>
             <Calendar
@@ -316,6 +317,7 @@ export default function Tache() {
 
           <div className="w-100 d-flex flex-column gap-4">
             {/* Creation Task */}
+            <span className={`${styles.DayNameMobile} FontFamilyMoments`}>{dayName}</span>
             <div className="d-flex justify-content-between w-100">
               <input
                 type="text"
@@ -459,7 +461,7 @@ export default function Tache() {
           <div className="modal-dialog modal-lg">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title">Nouvelle tâche</h5>
+                <h5 className="modal-title">New Task</h5>
                 <button
                   type="button"
                   className="btn-close"
@@ -480,7 +482,7 @@ export default function Tache() {
                   }}
                 >
                   <div className="mb-3">
-                    <label className="form-label">Titre</label>
+                    <label className="form-label">Title</label>
                     <input
                       type="text"
                       className="form-control"
@@ -506,7 +508,7 @@ export default function Tache() {
                   </div>
                   <div className="row">
                     <div className="col-md-6 mb-3">
-                      <label className="form-label">Date de début</label>
+                      <label className="form-label">Start Date</label>
                       <input
                         type="date"
                         className="form-control"
@@ -518,7 +520,7 @@ export default function Tache() {
                       />
                     </div>
                     <div className="col-md-6 mb-3">
-                      <label className="form-label">Date d'échéance</label>
+                      <label className="form-label">Due Date</label>
                       <input
                         type="date"
                         className="form-control"
@@ -531,7 +533,7 @@ export default function Tache() {
                     </div>
                   </div>
                   <div className="mb-3">
-                    <label className="form-label">Priorité</label>
+                    <label className="form-label">Priority</label>
                     <select
                       className="form-select"
                       value={newTask.priority}
@@ -552,11 +554,11 @@ export default function Tache() {
                       className="btn btn-secondary"
                       onClick={() => setShowModal(false)}
                     >
-                      Annuler
+                      Cancel
                     </button>
                     <button type="submit" className="btn btn-primary">
                       <i className="bi bi-plus-circle me-2"></i>
-                      Ajouter la tâche
+                      Add Task
                     </button>
                   </div>
                 </form>
