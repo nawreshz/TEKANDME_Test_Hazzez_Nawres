@@ -1,0 +1,286 @@
+.HelloText {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000;
+  padding: 13px 0px;
+  text-align: center;
+}
+
+.SpanHelloText {
+  color: #63605f;
+}
+
+@media (max-width:1200px) {
+  .HelloText{
+    font-size: 24px;
+    text-align: start;
+  }
+
+}
+
+.FormattedDate {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.TaskBody {
+  background-color: #faf7f2;
+  border-radius: 10px;
+  justify-content: center;
+  padding: 11px;
+}
+
+.InputCreation {
+  background-color: #dbe2ef;
+  padding: 7px 10px;
+  color: #7b7b7b;
+  font-family: var(--FontFamilyUbuntu);
+  border: 0.32px solid #b1b1b166;
+}
+
+.InputCreationTitle {
+  width: 25%;
+}
+
+.InputCreationDetail {
+  width: 60%;
+}
+
+.ButtonCreation {
+  padding: 10px;
+  width: 7%;
+  background-color: #5c9967;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FiltresBody {
+  background-color: #f0d1a8;
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titlesFiltres {
+  font-weight: 600;
+  color: #4b332f;
+  font-size: 15px;
+}
+
+.InputSearch {
+  padding: 8px;
+  border: 2px solid white !important;
+  outline: none !important;
+}
+
+.InputSearch:focus {
+  border: 2px solid var(--Linen, #f0d1a8) !important;
+  outline: none !important;
+}
+
+.InputSearch::placeholder {
+  color: rgba(0, 109, 119, 0.4);
+}
+
+.IconSearch {
+  position: absolute;
+  right: 10px;
+  padding: 0 !important;
+  top: 10px;
+}
+
+.FiltresParent {
+  gap: 16px;
+}
+
+.CarteStatsParent {
+  display: flex;
+  gap: 32px;
+}
+
+.CarteParent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+
+  justify-content: space-between;
+}
+
+.CarteStatsParentCarts {
+  padding: 30px;
+}
+
+@media (max-width:1200px) {
+
+  .CarteStatsParentCarts {
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+
+.CalendarAndDate {
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.calendar {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #e5e7eb;
+}
+
+.calendar :global(.react-calendar__tile) {
+  padding: 10px;
+  position: relative;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.calendar :global(.react-calendar__month-view__days__day) {
+  color: #555;
+  font-weight: 500;
+}
+
+.calendar :global(.react-calendar__month-view__days__day--weekend) {
+  color: #ff5757;
+}
+
+.calendar :global(.react-calendar__tile--now) {
+  background: #fef3c7 !important;
+  color: #92400e;
+}
+
+.calendar :global(.has-tasks) {
+  background-color: #e5f6ff;
+  color: #0369a1;
+  font-weight: 600;
+}
+
+.calendar :global(.selected-date) {
+  background-color: #0ea5e9 !important;
+  color: white !important;
+}
+
+.taskCount {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: #0ea5e9;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selectedDateTasks {
+  margin-top: 20px;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #e5e7eb;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.selectedDateTasks::-webkit-scrollbar {
+  width: 6px;
+}
+
+.selectedDateTasks::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.selectedDateTasks::-webkit-scrollbar-thumb {
+  background: #0ea5e9;
+  border-radius: 3px;
+}
+
+.selectedDateTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.tasksList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dateTaskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #f8fafc;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.dateTaskItem:hover {
+  background-color: #f1f5f9;
+  transform: translateX(2px);
+}
+
+.taskTitle {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.taskPriority {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.taskPriority.urgent {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.taskPriority.normal {
+  background-color: #e0f2fe;
+  color: #0284c7;
+}
+
+.taskPriority.low {
+  background-color: #f1f5f9;
+  color: #64748b;
+}
+
+@media (max-width: 1200px) {
+  .CalendarAndDate {
+    display: none !important;
+  }
+  .FiltresParentBody{
+    flex-direction: column;
+    gap: 16px;
+  }
+}

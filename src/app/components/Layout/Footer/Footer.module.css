@@ -1,0 +1,26 @@
+.footer {
+  background-color: #f2eaea;
+  padding: 11px;
+  align-items: center;
+}
+.tekandmecopyright {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.TodoListName{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.LogoTextContainer{
+    gap: 8px;
+    align-items: center;
+}
+.SocialMediaContainer{
+    gap: 10px;
+    align-items: center;
+}
+/* .FontFamily2 {
+
+} */

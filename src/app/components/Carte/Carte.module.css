@@ -1,0 +1,56 @@
+.Carte {
+  background-color: #f0d1a8;
+  padding: 8px;
+  border-radius: 8px;
+  width: 45%;
+  overflow: hidden;
+}
+@media (max-width:1200px) {
+  .Carte{
+    width: 100%;
+  }
+}
+.CarteTitle {
+  font-size: 20px;
+}
+.CarteDescription {
+  font-size: 12px;
+  color: rgba(92, 92, 87, 0.9);
+  word-wrap: break-word;
+}
+.CarteDate {
+  font-size: 16px;
+}
+
+.PriorityBadge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.CompletedBadge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.urgent {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.normal {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.low {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}

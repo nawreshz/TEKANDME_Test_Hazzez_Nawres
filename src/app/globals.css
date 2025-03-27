@@ -1,42 +1,71 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Actor&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+/* Colors */
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+}
+html {
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+body{
+  height: 100vh !important;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+:root {
+  --color-primary: #fff;
+  --color-secondary: ##0a142f;
+  --color-tertiary: #ffffff;
+  --color-quaternary: ##0d0d0c;
+}
+.color-primary {
+  color: var(--color-primary);
+}
+.color-secondary {
+  color: var(--color-secondary);
+}
+.color-tertiary {
+  color: var(--color-tertiary);
+}
+.color-quaternary {
+  color: var(--color-quaternary);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/* Font Family */
+
+.FontFamilyMoments {
+  font-family: "Island Moments", cursive;
 }
+.FontFamilyActor {
+  font-family: "Actor", sans-serif;
+}
+.FontFamilyRobotoFlex {
+  font-family: "Roboto Flex", sans-serif;
+}
+.FontFamilyAbhayaLibre {
+  font-family: "Abhaya Libre", sans-serif;
+}
+.FontFamilyUbuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+.FontFamilyInter {
+  font-family: "Inter", sans-serif;
+}
+.FontFamilyPoppins {
+  font-family: "Poppins", sans-serif;
+}
+.FontFamilyJost {
+  font-family: "Jost", sans-serif;
+}
+/* css globale pour toute les pages */
+.cursor-pointer {
+  cursor: pointer;
+}
+/* Imporation Fichiers css */
+
+@import url("./styles/Components/Layout/Footer.css");
